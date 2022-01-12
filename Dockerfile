@@ -1,8 +1,8 @@
 FROM node:current
 
-WORKDIR ./App.tsx
+WORKDIR ./
 
-COPY ./ ./App.tsx
+COPY ./ ./
 
 RUN npm install
 
