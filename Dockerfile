@@ -8,5 +8,5 @@ RUN npm install
 
 EXPOSE 8080
 
-CMD ["webpack"]
+CMD ["npm", "run", "build"]
 
