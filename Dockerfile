@@ -1,10 +1,10 @@
 FROM node:current
 
-COPY . /app
+WORKDIR ./App.tsx
+
+COPY ./ ./App.tsx
 
 RUN npm install
-
-COPY . .
 
 EXPOSE 8080
 
