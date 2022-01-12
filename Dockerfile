@@ -1,4 +1,4 @@
-FROM node:14.17.1
+FROM node:current
 
 COPY . /app
 
@@ -6,4 +6,7 @@ RUN npm install
 
 COPY . .
 
-CMD ["node", "soundboard_app.js"]
+EXPOSE 8080
+
+CMD ["node", "App.tsx"]
+
